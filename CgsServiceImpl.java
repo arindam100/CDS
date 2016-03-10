@@ -333,7 +333,7 @@ public class CgsServiceImpl extends AbstractGenericService {
 		}
 		//new CgsServiceImpl().putDocumentMetadata(options);
 		 */
-		DBCollection coll = db.getCollection("metadata_cache");
+		/DBCollection coll = db.getCollection("metadata_cache");
 		ArrayList<String> subs = new ArrayList<String>();
 		subs.add("gnew_201");
 		DBCursor cursor = coll.find(new BasicDBObject("subscriptions",new BasicDBObject("$in",subs)));
